@@ -184,6 +184,17 @@ color: #30bae7;
     top: 300px;
    padding: 0px 10px; 
     text-align: center;
-   
+}
+
+.contacts{
+    position: absolute;
+    top: 500px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+}
+.contacts-image{
+    margin: 0px 5px;
+
 }
 
