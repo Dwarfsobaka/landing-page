@@ -137,7 +137,6 @@ button{
     margin-top: 80px; 
     
 }
-
 .team{
         background-color: #e7f1f8;
         width: auto;
@@ -196,4 +195,72 @@ color: #30bae7;
 .contacts img{
     margin: 0px 5px;
 }
+
+.skills{
+        background-color: color="#ffffff";
+        width: auto;
+        height: 914px;
+        color: #3c4761;
+}
+
+#circle {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    margin: auto;
+    border-radius: 50%;
+    background: #dfe8ed;
+  }
+
+ #circle2 {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-image: linear-gradient(235deg, transparent 50%, #30bae7 50%), linear-gradient(270deg, #30bae7 50%, transparent 50%);
+    
+  } 
+
+#circle3 {
+    position: absolute;
+    margin: 15px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+
+ .persent{
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50pt;
+ } 
+
+
+ #circle-html2 {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, transparent 50%, #d74680 50%), linear-gradient(270deg, #d74680 50%, transparent 50%);
+    
+  } 
+  #circle-grph2 {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-image: linear-gradient(145deg, transparent 50%, #15c7a8 50%), linear-gradient(270deg, #15c7a8 50%, transparent 50%);
+
+  } 
+  #circle-uxui2 {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-image: linear-gradient(210deg, transparent 50%, #eb7d4b 50%), linear-gradient(270deg, #eb7d4b 50%, transparent 50%);
+    
+  } 
 
