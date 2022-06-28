@@ -18,6 +18,7 @@ body{
    width: 100%;
    max-width: 1140px;
    margin: 100px auto;
+
    
 }
 
@@ -68,7 +69,7 @@ header > div >ul{
    
 }
 
-button{
+.button-style{
     background-color:#eb7d4b;
     border-radius: 3px;
     padding: 28px 81px 28px 81px;
@@ -84,10 +85,9 @@ button{
 }
 
 .services{
-    top:  597px;
     background-color: #17c2a4;
     width: auto;
-    height: 749px;
+    height: 100%;
    
 }
 .services-text{
@@ -140,7 +140,7 @@ button{
 .team{
         background-color: #e7f1f8;
         width: auto;
-        height: 914px;
+        height: 100%;
         color: #3c4761;
 }
 
@@ -199,7 +199,7 @@ color: #30bae7;
 .skills{
         background-color: color="#ffffff";
         width: auto;
-        height: 914px;
+        height: 100%;
         color: #3c4761;
 }
 
@@ -261,6 +261,57 @@ color: #30bae7;
     height: 210px;
     border-radius: 50%;
     background-image: linear-gradient(210deg, transparent 50%, #eb7d4b 50%), linear-gradient(270deg, #eb7d4b 50%, transparent 50%);
-    
   } 
 
+ .portfolio{
+  background-color: #ffdd99;
+  width: auto;
+  height: 749px;
+  color: #393939;
+  height: 100%;
+ }
+  
+ .flex-buttons
+ { display: flex;
+ justify-content: center;
+}
+
+.line-portfolio{
+  width: 87px;
+   height: 4px;
+   background-color: #e5c37f;
+   border: none;
+}
+
+.button-portfolio{
+    background-color:#e5c37f;
+    border-radius: 3px;
+    padding: 10px 25px 10px 25px;
+    color:#393939;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12pt;
+    margin: 10px;
+}
+.button-portfolio:hover{
+    background-color: #ffffff;
+}
+
+.flex-portf-imgs1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.description{
+    text-transform: uppercase;
+    font-size: 14pt;
+    text-align: center;
+    margin: 20px;
+}
+
+.flex-portf-imgs2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
