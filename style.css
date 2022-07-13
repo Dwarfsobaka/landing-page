@@ -68,19 +68,23 @@ header > div >ul{
     margin-left: 420px;
    
 }
-
-.button-style{
-    background-color:#eb7d4b;
+.button-style, .button-portf-style, .button-send-message {
     border-radius: 3px;
-    padding: 28px 81px 28px 81px;
+    padding: 28px 20px 28px 20px;
     color:RGB(247, 243, 234);
     border: none;
-    box-shadow: 0px 4px 1px 0px #c86a40;
-    width: 292px;
+    width: 295px;
     height: 66px;
     font-weight: bold; 
     text-transform: uppercase;
     font-size: 12pt;
+    text-align: center;
+}
+
+
+.button-style{
+    background-color:#eb7d4b;
+    box-shadow: 0px 4px 1px 0px #c86a40;
     
 }
 
@@ -321,17 +325,7 @@ color: #30bae7;
 }
 .button-portf-style{
     background-color:#17c2a4;
-    border-radius: 3px;
-    padding: 28px 20px 28px 20px;
-    color:RGB(247, 243, 234);
-    border: none;
     box-shadow: 0px 4px 1px 0px #14a58c;
-    width: 292px;
-    height: 66px;
-    font-weight: bold; 
-    text-transform: uppercase;
-    font-size: 12pt;
-    text-align: center;
 }
 
 .testimonials{
@@ -368,3 +362,93 @@ color: #30bae7;
     font-size: 14pt;
     font-style: italic;
 }
+
+.get-in-touch{
+    background-color: #3c5499;
+    width: auto;
+    color: #ffffff;
+    height: 100%;
+}
+.line-get-in-touch{
+    width: 87px;
+    height: 4px;
+    background-color: #273a71;
+    border: none;
+}
+
+.flex-forms-input{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+ width: 400px;
+    height: 55px;
+    background-color: #273a71;
+    color: inherit;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 25px;
+    margin: 15px;
+    font-family: inherit;
+}
+
+input[type=text]:focus {
+    outline:none;
+  }
+
+  .message{
+    margin: 0px auto;
+  }
+
+  textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: inherit;
+    width: 860px;
+    max-width: 860px;
+    height: 200px;
+    background-color: #273a71;
+    border: none;
+    border-radius: 3px;
+    padding-left: 25px;
+    font-size: 16px;
+    padding-top: 25px;
+    font-family: inherit;
+  }
+  
+textarea[type=text]:focus {
+    outline:none;
+  }
+
+
+  .button-message{
+    width: 20%;
+    margin: 60px auto;
+}
+
+.button-send-message{
+    background-color: #30bae7;
+    box-shadow: 0px 4px 1px 0px #299ec5;
+}
+.footer{
+    background-color: #344b8e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer > ul{
+    list-style-type: none;
+}
+
+.footer ul > li {
+    display: inline;
+    margin-right: 30px;
+    padding: 2px 15px;
+}
+
+.footer ul > li:hover {
+   color: #30bae7;
+   } 
