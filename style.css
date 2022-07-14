@@ -11,15 +11,13 @@ body{
 .wellcome{
     background-color: RGB(135, 80, 156);
     width: auto;
-    height: 596px;
+    height: 100%;
    
 }
 .main-container{
    width: 100%;
    max-width: 1140px;
    margin: 100px auto;
-
-   
 }
 
 .header{
@@ -54,21 +52,20 @@ header > div >ul{
 }
 
 .text{
+    width: 950px;
+    margin: 200px auto;
     font-size: 32pt;
-    position: absolute;
-    top: 190px;
-    text-align: center;
-    margin: 0 117px 0 117px;
     font-weight: bold;
-   
+    text-align: center;
+    height: auto;
 }
+
 .button{
-    position: absolute;
-    top: 400px;
-    margin-left: 420px;
-   
+    width: 20%;
+    margin: 60px auto;
 }
-.button-style, .button-portf-style, .button-send-message {
+
+.button, .button-style, .button-portf-style, .button-send-message {
     border-radius: 3px;
     padding: 28px 20px 28px 20px;
     color:RGB(247, 243, 234);
@@ -80,7 +77,6 @@ header > div >ul{
     font-size: 12pt;
     text-align: center;
 }
-
 
 .button-style{
     background-color:#eb7d4b;
@@ -94,7 +90,7 @@ header > div >ul{
     height: 100%;
    
 }
-.services-text{
+.team-text {
     width: 100%;
     margin: -20px auto;
     font-size: 32pt;
@@ -103,12 +99,17 @@ header > div >ul{
     text-transform: uppercase;
     text-align: center;
 }
-.line{
+
+.line, .line-get-in-touch, .line-test, .line-portfolio,	.line-team{
     width: 87px;
     height: 4px;
-   background-color: #14a58c;
    border: none;
 }
+
+.line{
+background-color: #14a58c;
+}
+
 .text-descr{
     width: 100%;
     margin: 0px auto;
@@ -149,22 +150,9 @@ header > div >ul{
 }
 
 .line-team{
-margin: 0 auto;
- width: 87px;
-height: 4px;
 background-color: #c8d9e5;
-border: none;
 }
 
-.team-text{
-    width: 100%;
-    margin: -20px auto;
-    text-align: center;
-    font-size: 32pt;
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
 
 .team-descr{
 width: 100%;
@@ -243,7 +231,7 @@ color: #30bae7;
  } 
 
 
- #circle-html2 {
+ #circle-html2, #circle-grph2, #circle-uxui2   {
     position: absolute;
     width: 210px;
     height: 210px;
@@ -252,18 +240,10 @@ color: #30bae7;
     
   } 
   #circle-grph2 {
-    position: absolute;
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
     background-image: linear-gradient(145deg, transparent 50%, #15c7a8 50%), linear-gradient(270deg, #15c7a8 50%, transparent 50%);
 
   } 
   #circle-uxui2 {
-    position: absolute;
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
     background-image: linear-gradient(210deg, transparent 50%, #eb7d4b 50%), linear-gradient(270deg, #eb7d4b 50%, transparent 50%);
   } 
 
@@ -280,10 +260,7 @@ color: #30bae7;
 }
 
 .line-portfolio{
-  width: 87px;
-   height: 4px;
    background-color: #e5c37f;
-   border: none;
 }
 
 .button-portfolio{
@@ -336,10 +313,7 @@ color: #30bae7;
 }
 
 .line-test{
-    width: 87px;
-    height: 4px;
     background-color: #b73c6d;
-    border: none;
 }
 .flex-clients-blocks{
     display: flex;
@@ -370,10 +344,7 @@ color: #30bae7;
     height: 100%;
 }
 .line-get-in-touch{
-    width: 87px;
-    height: 4px;
     background-color: #273a71;
-    border: none;
 }
 
 .flex-forms-input{
