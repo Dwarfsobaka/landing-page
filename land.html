@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <title>Лэндинг</title>
 </head>
 <body>
@@ -18,10 +20,11 @@
         <li>About</li>
         <li>Work</li>
         <li>Blog</li>
-        <li>Contact</li></nav></div>
+        <li>Contact</li></ul>
+        <a href="#" id="pull"></a>
+      </nav></div>
 </header>
     <div class="main-container">
-
 <div class="text"><p>Hi there! We are the new kids on the block<br>
   and we build awesome websites and mobile apps.</p>
 <div class="button">
@@ -243,5 +246,27 @@
   </ul>
   </footer></div>
 </div>
+<script>
+
+$(function() {
+	var pull 		= $('#pull');
+		menu 		= $('nav ul');
+		menuHeight	= menu.height();
+    p = $('.text');
+
+	$(pull).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+   p.css("marginTop", "300px");
+	});
+});
+
+$(window).resize(function(){
+	var w = $(window).width();
+	if(w > 320 && menu.is(':hidden')) {
+		menu.removeAttr('style');
+	}
+});
+  </script>
 </body>
 </html>

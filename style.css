@@ -1,16 +1,17 @@
 
 body{
-    min-width: 1140px;
+    /* min-width: 1140px; */
     font-family: "Titillium Web", sans-serif;
     color:RGB(247, 243, 234);
 }
 .all-blocks{
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 .wellcome{
     background-color: RGB(135, 80, 156);
-    width: auto;
+    /* width: auto; */
     height: 100%;
    
 }
@@ -50,9 +51,12 @@ header > div >ul{
     margin: 45px;
     text-transform: uppercase;
 }
+nav a#pull {
+	display: none;
+}
 
 .text{
-    width: 950px;
+    width: 100%;
     margin: 200px auto;
     font-size: 32pt;
     font-weight: bold;
@@ -423,3 +427,60 @@ textarea[type=text]:focus {
 .footer ul > li:hover {
    color: #30bae7;
    } 
+
+   @media (max-width: 576px) {
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+     textarea, .button-message, .button-portf{
+        width: 50%;
+        
+    } 
+    .block-client {
+        width: 90%;
+    }
+    .flex, .flex-portf-imgs1, .flex-portf-imgs2, .flex-clients-blocks, .flex-forms-input{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-descr > p, .team-descr > p{
+        padding: 0px 10px 0px 10px;
+    }
+    figure > img {
+        width: 90%;
+    }
+
+    nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: #283744;
+		width: 100%;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('images/icon-menu.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+    .nav ul > li {
+		display: block;
+		float: none;
+		width: 100%;
+        text-align: right;
+	}
+
+}
