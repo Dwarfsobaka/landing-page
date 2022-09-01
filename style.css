@@ -83,8 +83,7 @@ nav a#pull {
 
 .button,
 .button-style,
-.button-portf-style,
-.button-send-message {
+.button-portf-style {
     border-radius: 3px;
     padding: 28px 20px 28px 20px;
     color: RGB(247, 243, 234);
@@ -101,6 +100,12 @@ nav a#pull {
     background-color: #eb7d4b;
     box-shadow: 0px 4px 1px 0px #c86a40;
 
+}
+
+.button-style:hover {
+    background-color: #94837cef;
+    box-shadow: none;
+    cursor: pointer;
 }
 
 .services {
@@ -308,6 +313,7 @@ nav a#pull {
 
 .button-portfolio:hover {
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 .flex-portf-imgs1 {
@@ -390,6 +396,8 @@ nav a#pull {
     justify-content: center;
 }
 
+
+
 input {
     width: 400px;
     height: 55px;
@@ -400,8 +408,9 @@ input {
     border-radius: 3px;
     padding-left: 25px;
     margin: 15px;
-    font-family: inherit;
+
 }
+
 
 input[type=text]:focus {
     outline: none;
@@ -434,13 +443,31 @@ textarea[type=text]:focus {
 
 
 .button-message {
-    width: 20%;
+    width: 30%;
     margin: 60px auto;
+
 }
 
 .button-send-message {
     background-color: #30bae7;
     box-shadow: 0px 4px 1px 0px #299ec5;
+    border-radius: 3px;
+    padding: 20px 20px 20px 20px;
+    color: RGB(247, 243, 234);
+    border: none;
+    width: 295px;
+    height: 66px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12pt;
+    text-align: center;
+    font-family: inherit;
+}
+
+.button-send-message:hover {
+    background-color: #94afb8;
+    box-shadow: none;
+    cursor: pointer;
 }
 
 .footer {
@@ -459,22 +486,49 @@ textarea[type=text]:focus {
     padding: 2px 15px;
 }
 
-.footer ul>li:hover {
+.footer ul>li>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer ul>li>a:hover {
     color: #30bae7;
 }
+
 
 @media (max-width: 576px) {
     footer ul {
         display: flex;
-        flex-direction: column;
-        height: 100%;
+        /* flex-direction: column;
+        height: 100%; */
+        flex-wrap: wrap;
+        align-content: stretch;
     }
 
     textarea,
-    .button-message,
-    .button-portf {
+    .button-portf,
+    input[type="text"] {
         width: 50%;
+    }
 
+    .flex-buttons {
+        flex-wrap: wrap;
+        align-content: stretch;
+        height: 100%;
+
+    }
+
+    input[type="text"] {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .button-send-message {
+        width: 90%;
+    }
+
+    .button-message {
+        width: 70%;
     }
 
     .block-client {
@@ -489,6 +543,8 @@ textarea[type=text]:focus {
         flex-direction: column;
         align-items: center;
     }
+
+
 
     .text-descr>p,
     .team-descr>p {
