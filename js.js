@@ -90,8 +90,10 @@ $(document).ready(function () {
             beforeSend: function () {
                 // Вывод текста в процессе отправки
                 $(formNm).html('<p style="text-align:center">Отправка...</p>');
+                // <p style="text-align:center">Отправка...</p>
             },
             success: function (data) {
+                $(formNm).html('<p style="text-align:center">' + data + '</p>');
                 document.querySelector(".message").hidden = true;
             },
 
