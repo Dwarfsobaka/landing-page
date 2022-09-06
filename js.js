@@ -7,14 +7,14 @@ $(function () {
 
     $(pull).on('click', function (e) {
         e.preventDefault();
-        menu.slideToggle(); s
+        menu.slideToggle();
         p.css("marginTop", "300px");
     });
 });
 
 $(window).resize(function () {
     var w = $(window).width();
-    if (w > 320 && menu.is(':hidden')) {
+    if (w > 575 && menu.is(':hidden')) {
         menu.removeAttr('style');
     }
 });

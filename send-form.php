@@ -1,12 +1,12 @@
 <?php
 
 if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' && !empty($_POST['name'])) {
-    $message = 'Имя: ' . $_POST['name'] . ' ';
-    $message .= 'Адрес почты: ' . $_POST['email'] . ' ';
+    $message = 'Имя: ' . $_POST['name'] . ' <br>';
+    $message .= 'Адрес почты: ' . $_POST['email'] . ' <br>';
     if(!empty($_POST['message'])) {
         $message .= 'Текст: ' . $_POST['message'] . ' ';
     }
-    $mailTo = "dwarfsobaka@gmail.com"; // Ваш e-mail
+    $mailTo = "your@mail.com"; // Ваш e-mail
     $subject = "Письмо с сайта"; // Тема сообщения
     $headers= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";

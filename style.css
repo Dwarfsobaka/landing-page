@@ -496,11 +496,9 @@ textarea[type=text]:focus {
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     footer ul {
         display: flex;
-        /* flex-direction: column;
-        height: 100%; */
         flex-wrap: wrap;
         align-content: stretch;
     }
@@ -587,6 +585,35 @@ textarea[type=text]:focus {
         float: none;
         width: 100%;
         text-align: right;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .nav {
+        margin: 10px;
+    }
+
+    .flex,
+    .flex-portf-imgs1,
+    .flex-portf-imgs2,
+    .flex-clients-blocks,
+    .flex-forms-input {
+        flex-wrap: wrap;
+        align-content: stretch;
+        height: 100%;
+    }
+
+    figure>img {
+        width: 90%;
+    }
+
+    textarea {
+        width: 70%;
+    }
+
+    .button-message {
+        width: 55%;
     }
 
 }
