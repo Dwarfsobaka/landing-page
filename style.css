@@ -595,13 +595,26 @@ textarea[type=text]:focus {
     }
 
     .flex,
-    .flex-portf-imgs1,
-    .flex-portf-imgs2,
-    .flex-clients-blocks,
     .flex-forms-input {
         flex-wrap: wrap;
         align-content: stretch;
         height: 100%;
+    }
+
+    .flex-clients-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blocks-servises {
+        width: 50%;
+    }
+
+
+    .flex-portf-imgs1,
+    .flex-portf-imgs2 {
+        flex-direction: column;
+        align-items: center;
     }
 
     figure>img {
@@ -616,4 +629,105 @@ textarea[type=text]:focus {
         width: 55%;
     }
 
+}
+
+@media (min-width:768px) {
+    .flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .blocks-servises {
+        width: 40%;
+    }
+
+    .blocks {
+        width: 40%
+    }
+
+    .contacts {
+        margin: 0% auto;
+    }
+
+    .button-message {
+        width: 40%;
+    }
+
+    .flex-clients-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .blocks {
+        width: 250px;
+    }
+
+    .flex-portf-imgs1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* margin-top: 65px; */
+    }
+
+    .flex-portf-imgs2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* margin-top: 15px; */
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .contacts {
+        margin: 0% auto;
+    }
+
+    .button-message {
+        width: 30%;
+    }
+
+    .flex-clients-blocks {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .block-client {
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blocks-servises {
+        width: 240px;
+    }
+
+    figure>img {
+        width: 100%;
+    }
+
+    .flex-clients-blocks {
+        justify-content: space-between;
+    }
+
+    .block-client {
+        width: 500px;
+    }
 }

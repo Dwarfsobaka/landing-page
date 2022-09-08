@@ -14,7 +14,7 @@ $(function () {
 
 $(window).resize(function () {
     var w = $(window).width();
-    if (w > 575 && menu.is(':hidden')) {
+    if (w > 576 && menu.is(':hidden')) {
         menu.removeAttr('style');
     }
 });
